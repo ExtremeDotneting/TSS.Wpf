@@ -1,0 +1,21 @@
+﻿<Window x:Class="TSS.Wpf.WindowMainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TSS.Wpf"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="WindowMainMenu" Height="300.744" Width="359.775" Style="{DynamicResource defStyle}" Closed="Window_Closed">
+    <Grid>
+        <Image x:Name="imageLogo" Margin="10,10,10,0" Stretch="Fill" Height="112" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,223,0,0" Width="55" SelectedIndex="0" RenderTransformOrigin="0.502,0.243" IsReadOnly="True" Height="31" VerticalAlignment="Top">
+            <ComboBoxItem Content="en" Selected="ComboBoxItem_Selected"/>
+            <ComboBoxItem Content="ru" Selected="ComboBoxItem_Selected"/>
+        </ComboBox>
+        <Button x:Name="buttonCreatUniverse" Content="Create universe" Margin="10,136,10,0" VerticalAlignment="Top" Click="buttonCreatUniverse_Click"/>
+        <Button x:Name="buttonLoadUniverse" Content="Load universe" Margin="10,165,10,0" VerticalAlignment="Top" Click="buttonLoadUniverse_Click"/>
+        <Button x:Name="buttonAbout" Content="About" Margin="10,194,10,0" VerticalAlignment="Top" Click="buttonAbout_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="TSS.Wpf.WindowValuesRedactor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TSS.Wpf"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="WindowValuesRedactor" Height="582.575" Width="475.669" Style="{DynamicResource defStyle}">
+    <Grid>
+        <Grid Margin="20,10,22,44">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,6">
+                <StackPanel x:Name="stackPanel">
+                    <local:SliderWithValueLabel/>
+                    <GroupBox x:Name="groupBox" Header="GroupBox" Height="50"/>
+                    <local:SliderWithValueLabel/>
+                    <TextBox x:Name="textBox"  Margin="1,0,3,0" TextWrapping="Wrap" Text="text" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Button x:Name="applyButton" Content="Apl" Margin="20,0,0,11" Width="101"  HorizontalAlignment="Left" Click="applyButton_Click" Height="30" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>

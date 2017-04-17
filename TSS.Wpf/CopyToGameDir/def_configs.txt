@@ -1,0 +1,30 @@
+<ConstsUniverse>
+  <MaxCountOfCellTypes>3</MaxCountOfCellTypes>
+  <Mutation_Enable>True</Mutation_Enable>
+  <Mutation_AttackChildrenMutantsOfFirstGeneration>False</Mutation_AttackChildrenMutantsOfFirstGeneration>
+  <Mutation_AttackParentIfCellIsYouMutant>True</Mutation_AttackParentIfCellIsYouMutant>
+  <Mutation_ChangedValuesAtOne>50</Mutation_ChangedValuesAtOne>
+  <Mutation_ChancePercent>9</Mutation_ChancePercent>
+  <CellAge_Max>100</CellAge_Max>
+  <CellAge_AdultCell>1</CellAge_AdultCell>
+  <EnergyLevel_CreatingCell>200</EnergyLevel_CreatingCell>
+  <EnergyLevel_NeededForReproduction>50</EnergyLevel_NeededForReproduction>
+  <EnergyLevel_MaxForCell>5000</EnergyLevel_MaxForCell>
+  <EnergyLevel_DeadCell>10</EnergyLevel_DeadCell>
+  <EnergyLevel_DefFood>20</EnergyLevel_DefFood>
+  <EnergyLevel_PoisonedFood>-1000</EnergyLevel_PoisonedFood>
+  <EnergyLevel_MovesFriendly>1,1</EnergyLevel_MovesFriendly>
+  <EnergyLevel_MovesAggression>200</EnergyLevel_MovesAggression>
+  <CellsCount_MaxWithOneType>99999999</CellsCount_MaxWithOneType>
+  <CellGenome_Child_Aggression>-2</CellGenome_Child_Aggression>
+  <CellsCount_MaxAtField>999999999</CellsCount_MaxAtField>
+  <EnergyEntropyPerSecond>1</EnergyEntropyPerSecond>
+  <Special_FoodCountForTick>10</Special_FoodCountForTick>
+  <Special_PoisonCountForTick>1</Special_PoisonCountForTick>
+  <CellGenome_HungerRange>-30/100</CellGenome_HungerRange>
+  <CellGenome_AggressionRange>-30/100</CellGenome_AggressionRange>
+  <CellGenome_ReproductionRange>-100/100</CellGenome_ReproductionRange>
+  <CellGenome_FriendlyRange>-100/100</CellGenome_FriendlyRange>
+  <CellGenome_PoisonRange>-100/30</CellGenome_PoisonRange>
+  <CellGenome_CorpseRange>-100/100</CellGenome_CorpseRange>
+</ConstsUniverse>

@@ -1,0 +1,53 @@
+﻿<Window x:Class="TSS.Wpf.WindowUniverseOutput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TSS.Wpf"
+        mc:Ignorable="d"
+        MinWidth="1000"
+        MinHeight="500"
+        Title="Simulation" Height="376.24" Width="668.799" Style="{DynamicResource defStyle}"
+        WindowState="Maximized">
+    <Grid>
+        <TabControl x:Name="tabControl" Margin="0,10,10,10" HorizontalAlignment="Right" Width="366" >
+            <TabItem x:Name="tabItem_SimulationInfo" Header="Simulation info">
+                <Grid Background="#FFE5E5E5">
+                    <Image x:Name="imageSimulationInfo" Margin="10" StretchDirection="Both" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabItem_Controls" Header="Controls">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,0" VerticalAlignment="Top" Height="27"/>
+                    <Button x:Name="buttonPause" Content="Pause" Margin="10,45,10,0" VerticalAlignment="Top" Height="27"/>
+                    <Label x:Name="labelWidth" Content="Width" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" FontSize="12" Width="57"/>
+                    <Label x:Name="labelHeight" Content="Height" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" FontSize="12" Width="57"/>
+                    <TextBox x:Name="textBoxResolutionWidth" Height="23" Margin="72,88,10,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBoxResolutionHeight" Height="23" Margin="72,116,10,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+                    <Button x:Name="buttonResetResolution" Content="Set resolution" Margin="10,148,10,0" VerticalAlignment="Top" Height="27"/>
+                    <local:SliderWithValueLabel x:Name="sliderWithValueLabel_Delay" Margin="86,193,10,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelDelay" Content="Delay" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" FontSize="12" Width="71"/>
+                    <Button x:Name="buttonSaveUniverse" Content="Save universe" Margin="10,228,10,0" VerticalAlignment="Top" Height="27"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem  x:Name="tabItem_Game" Header="Game">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="buttonFoodPlaceRedactot" Content="Food place redactor" Margin="10,10,10,0" VerticalAlignment="Top" Height="27"/>
+                    <Button x:Name="buttonPosinPlaceRedactot" Content="Food poison redactor" Margin="10,45,10,0" VerticalAlignment="Top" Height="27"/>
+                    <Button x:Name="buttonClearField" Content="Clear field" Margin="10,80,10,0" VerticalAlignment="Top" Height="27"/>
+                    <Label x:Name="labelCellsCount" Content="Cells count" Margin="10,117,0,0" VerticalAlignment="Top" FontSize="12" HorizontalAlignment="Left" Width="78"/>
+                    <TextBox x:Name="textBoxCellsCount" Height="23" Margin="93,116,10,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+                    <Button x:Name="buttonGenerateCells" Content="Generate cells" Margin="10,150,10,0" VerticalAlignment="Top" Height="27"/>
+                    <Button x:Name="buttonGenerateFoodOnAll" Content="Generate food on all field" Margin="10,185,10,0" VerticalAlignment="Top" Height="27"/>
+                    <Button x:Name="buttonConstsRedactor" Content="Game consts redactor" Margin="10,220,10,0" VerticalAlignment="Top" Height="27"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Margin="10,10,383,10">
+            <Image x:Name="imageUniverseField" Margin="10" StretchDirection="Both" VerticalAlignment="Top"/>
+        </Grid>
+
+    </Grid>
+</Window>
